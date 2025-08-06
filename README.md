@@ -34,6 +34,13 @@ para obtener la contraseña inicial, debes revisar el contenido del fichero _/ne
 
     docker exec -it devops-infra-nexus-1 cat /nexus-data/admin.password
 
+
+Recuerda habilitar "Docker Bearer Token Realm" en el panel de administracion de Nexus para poder autenticar con docker login
+
+    Settings > Security > Realms
+
+
+
 # urls de acceso:
 
 
