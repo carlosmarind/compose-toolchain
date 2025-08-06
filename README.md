@@ -23,6 +23,15 @@ Revisar plugins instalados, en la consola de script de jenkins:
     }")
 }
 
+Las credenciales de nexus deben ser de tipo __*nombre de usuario y contraseña*__
+
+Las credenciales de sonar deben ser de tipo __*texto secreto*__ y debe contener el token creado en sonarqube
+
+El hook de sonarqube a jenkins debe invocar la url 
+
+    http://jenkins:8080/sonarqube-webhook/
+
+
 ## Sonarqube
 Contraseña por defecto tras primera instalacion:
 
