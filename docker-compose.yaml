@@ -55,6 +55,7 @@ services:
       - "8084:9000"
   db_sonar:
     image: postgres:12
+    restart: always
     environment:
       POSTGRES_USER: sonar
       POSTGRES_PASSWORD: sonar
