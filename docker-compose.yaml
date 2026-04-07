@@ -1,24 +1,5 @@
 name: devops-infra
 services:
-  gitlab:
-    profiles: ['not-start']
-    image: gitlab/gitlab-ee:16.10.1-ee.0
-    container_name: gitlab
-    restart: always
-    hostname: 'gitlab.carlosmarind.cl'
-    environment:
-      GITLAB_OMNIBUS_CONFIG: |
-        # Add any other gitlab.rb configuration here, each on its own line
-        external_url 'https://gitlab.carlosmarind.cl'
-    ports:
-      - '80:80'
-      - '443:443'
-      - '22:22'
-    volumes:
-      - gitlab-config:/etc/gitlab
-      - gitlab-logs:/var/log/gitlab
-      - gitlab-data:/var/opt/gitlab
-    shm_size: '256m'
   jenkins:
     build:
       context: .
@@ -29,16 +10,6 @@ services:
     volumes:
       - jenkins_home:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
-  nexus:
-    profiles: ['not-start']
-    image: sonatype/nexus3
-    restart: always
-    volumes:
-      - nexus-data:/nexus-data
-    ports:
-      - "8081:8081"
-      - "8082:8082"
-      - "8083:8083"
   sonarqube:
     image: sonarqube:community
     depends_on:
@@ -53,7 +24,7 @@ services:
       - sonarqube_extensions:/opt/sonarqube/extensions
       - sonarqube_logs:/opt/sonarqube/logs
     ports:
-      - "8084:9000"
+      - "8081:9000"
   db_sonar:
     image: postgres:12
     restart: always
@@ -64,11 +35,7 @@ services:
       - postgresql:/var/lib/postgresql
       - postgresql_data:/var/lib/postgresql/data
 volumes:
-  gitlab-config:
-  gitlab-logs:
-  gitlab-data:
   jenkins_home:
-  nexus-data:
   sonarqube_data:
   sonarqube_extensions:
   sonarqube_logs:

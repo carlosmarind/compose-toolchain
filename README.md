@@ -23,8 +23,6 @@ Revisar plugins instalados, en la consola de script de jenkins:
     }")
 }
 
-Las credenciales de nexus deben ser de tipo __*nombre de usuario y contraseña*__
-
 Las credenciales de sonar deben ser de tipo __*texto secreto*__ y debe contener el token creado en sonarqube
 
 El hook de sonarqube a jenkins debe invocar la url 
@@ -37,24 +35,8 @@ Contraseña por defecto tras primera instalacion:
 
     admin/admin
 
-## Nexus
-
-para obtener la contraseña inicial, debes revisar el contenido del fichero _/nexus-data/admin.password del contenedor de nexus. Aca un atajo
-
-    docker exec -it devops-infra-nexus-1 cat /nexus-data/admin.password
-
-
-Recuerda habilitar "Docker Bearer Token Realm" en el panel de administracion de Nexus para poder autenticar con docker login
-
-    Settings > Security > Realms
-
-
-
 # urls de acceso:
 
-
 [Jenkins](http://localhost:8080)
-
-[Nexus Artifactory](http://localhost:8081)
 
 [Sonarqube](http://localhost:8084)

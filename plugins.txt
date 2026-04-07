@@ -1,92 +1,94 @@
-ionicons-api: latest
-cloudbees-folder: latest
-antisamy-markup-formatter: latest
-asm-api: latest
-json-path-api: latest
-structs: latest
-workflow-step-api: latest
-token-macro: latest
-build-timeout: latest
-credentials: latest
-plain-credentials: latest
-variant: latest
-ssh-credentials: latest
-credentials-binding: latest
-scm-api: latest
-workflow-api: latest
-commons-lang3-api: latest
-timestamper: latest
-caffeine-api: latest
-script-security: latest
-javax-activation-api: latest
-jaxb: latest
-snakeyaml-api: latest
-json-api: latest
-jackson2-api: latest
-commons-text-api: latest
-workflow-support: latest
-plugin-util-api: latest
-font-awesome-api: latest
-bootstrap5-api: latest
-jquery3-api: latest
-echarts-api: latest
-display-url-api: latest
-checks-api: latest
-junit: latest
-matrix-project: latest
-resource-disposer: latest
-ws-cleanup: latest
-ant: latest
-javax-mail-api: latest
-durable-task: latest
-workflow-durable-task-step: latest
-bouncycastle-api: latest
-instance-identity: latest
-workflow-scm-step: latest
-workflow-cps: latest
-workflow-job: latest
-jakarta-activation-api: latest
-jakarta-mail-api: latest
-apache-httpcomponents-client-4-api: latest
-mailer: latest
-workflow-basic-steps: latest
-gradle: latest
-pipeline-milestone-step: latest
-pipeline-build-step: latest
-pipeline-groovy-lib: latest
-pipeline-stage-step: latest
-joda-time-api: latest
-pipeline-model-api: latest
-pipeline-model-extensions: latest
-branch-api: latest
-workflow-multibranch: latest
-pipeline-stage-tags-metadata: latest
-pipeline-input-step: latest
-pipeline-model-definition: latest
-workflow-aggregator: latest
-jjwt-api: latest
-okhttp-api: latest
-github-api: latest
-mina-sshd-api-common: latest
-mina-sshd-api-core: latest
-gson-api: latest
-trilead-api: latest
-git-client: latest
-git: latest
-github: latest
-github-branch-source: latest
-pipeline-github-lib: latest
-pipeline-graph-analysis: latest
-pipeline-rest-api: latest
-pipeline-stage-view: latest
-ssh-slaves: latest
-matrix-auth: latest
-pam-auth: latest
-ldap: latest
-email-ext: latest
-theme-manager: latest
-dark-theme: latest
-docker-commons: latest
-docker-workflow: latest
-ws-cleanup: latest
-sonar: latest
+ionicons-api
+cloudbees-folder
+antisamy-markup-formatter
+asm-api
+json-path-api
+structs
+workflow-step-api
+token-macro
+build-timeout
+credentials
+plain-credentials
+variant
+ssh-credentials
+credentials-binding
+scm-api
+workflow-api
+commons-lang3-api
+timestamper
+caffeine-api
+script-security
+javax-activation-api
+jaxb
+snakeyaml-api
+json-api
+jackson2-api
+commons-text-api
+workflow-support
+plugin-util-api
+font-awesome-api
+bootstrap5-api
+jquery3-api
+echarts-api
+display-url-api
+checks-api
+junit
+matrix-project
+resource-disposer
+ws-cleanup
+ant
+javax-mail-api
+durable-task
+workflow-durable-task-step
+bouncycastle-api
+instance-identity
+workflow-scm-step
+workflow-cps
+workflow-job
+jakarta-activation-api
+jakarta-mail-api
+apache-httpcomponents-client-4-api
+mailer
+workflow-basic-steps
+gradle
+pipeline-milestone-step
+pipeline-build-step
+pipeline-groovy-lib
+pipeline-stage-step
+joda-time-api
+pipeline-model-api
+pipeline-model-extensions
+branch-api
+workflow-multibranch
+pipeline-stage-tags-metadata
+pipeline-input-step
+pipeline-model-definition
+workflow-aggregator
+jjwt-api
+okhttp-api
+github-api
+mina-sshd-api-common
+mina-sshd-api-core
+gson-api
+trilead-api
+git-client
+git
+github
+github-branch-source
+pipeline-github-lib
+pipeline-graph-analysis
+pipeline-rest-api
+pipeline-stage-view
+ssh-slaves
+matrix-auth
+pam-auth
+ldap
+email-ext
+theme-manager
+dark-theme
+docker-commons
+docker-workflow
+ws-cleanup
+sonar
+kubernetes
+kubernetes-client-api

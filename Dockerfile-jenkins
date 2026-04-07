@@ -1,7 +1,4 @@
-FROM jenkins/jenkins:lts
-
-ENV JENKINS_USER=admin
-ENV JENKINS_PASS=admin123
+FROM jenkins/jenkins:lts-jdk21
 
 ENV JAVA_OPTS=-Djenkins.install.runSetupWizard=false
 
@@ -28,5 +25,4 @@ RUN apt-cache policy docker-ce
 RUN apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 RUN apt-get update
 RUN apt-get clean
-RUN gpasswd -a jenkins docker 
 RUN usermod -aG docker jenkins
