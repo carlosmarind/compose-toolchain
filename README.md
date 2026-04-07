@@ -14,6 +14,11 @@ En cambio, si queremos bajar la infraestructura y ademas eliminar los volumenes,
 
     docker compose  down --volumes
 
+En caso de actualizar los plugins de jenkins o hacer algun cambio al jenkins file, es neceario ejecutar lo siguiente para rehacer la imagen:
+
+    docker compose build --no-cache
+    docker compose up -d
+
 ## jenkins
 
 Revisar plugins instalados, en la consola de script de jenkins:
@@ -28,6 +33,7 @@ Las credenciales de sonar deben ser de tipo __*texto secreto*__ y debe contener 
 El hook de sonarqube a jenkins debe invocar la url 
 
     http://jenkins:8080/sonarqube-webhook/
+
 
 
 ## Sonarqube
