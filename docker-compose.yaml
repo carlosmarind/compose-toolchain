@@ -26,7 +26,7 @@ services:
     ports:
       - "8081:9000"
   db_sonar:
-    image: postgres:12
+    image: postgres:15
     restart: always
     environment:
       POSTGRES_USER: sonar
